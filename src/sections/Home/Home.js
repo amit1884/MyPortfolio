@@ -1,12 +1,18 @@
 import React from "react";
 import { Element } from "react-scroll";
-
+import Avatar from '../../assets/images/Amit-without-bg.png'
+import './home.scss'
 function Home() {
   return (
     <Element name="home" className="section">
-      <div className="section">
-        <h1>Home</h1>
-        <p>This is section 1</p>
+      <div className="home-section">
+        <div className="text-content" data-aos="slide-right">
+          <div className="main-heading">Amit Raj</div>
+          <div className="sub-heading">I am a Software Engineer</div>
+        </div>
+        <div className="my-pic" data-aos="slide-left">
+          <img src ={Avatar} alt="" className="pic"/>
+        </div>
       </div>
     </Element>
   );

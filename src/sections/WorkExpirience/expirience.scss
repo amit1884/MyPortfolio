@@ -1,0 +1,61 @@
+.expirience-section{
+    padding:30px;
+    .expirience-container{
+        display: flex;
+        justify-content: space-around;
+        .expirience-card{
+            flex:1;
+            margin:10px;
+            overflow: hidden;
+            position: relative;
+            .expirience-card-header{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height:200px;
+                img{
+                    width:100%;
+                }
+            }
+        }
+        .old-expirience{
+            margin-top: 50px;
+            padding-bottom: 20px;
+        }
+
+    }
+}
+
+.corner-tag {
+    position: absolute;
+      background: purple;
+      width: 250px;
+      height: 50px;
+      top: -10%;
+      left: -20%;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      text-align: center;
+      line-height: 4;
+      color: #fff;
+      z-index: 999;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+.expirience-details-table{
+    width:100%;
+    th,td{
+        padding-top:10px;
+        padding-bottom:10px;
+        width:max-content;
+    }
+    th{
+        text-align: left;
+    }
+    td{
+        text-align: right;
+    }
+}
