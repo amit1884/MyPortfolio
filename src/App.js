@@ -6,6 +6,8 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import WorkExpirience from "./sections/WorkExpirience/WorkExpirience";
+import Projects from "./sections/Projects/Projects";
+import Skills from "./sections/Skills/Skills";
 function App() {
   Aos.init();
   return (
@@ -15,6 +17,8 @@ function App() {
         <Home />
         <About />
         <WorkExpirience />
+        <Skills/>
+        <Projects/>
       </div>
     </div>
   );
