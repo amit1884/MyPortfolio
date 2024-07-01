@@ -8,6 +8,8 @@ import "aos/dist/aos.css";
 import WorkExpirience from "./sections/WorkExpirience/WorkExpirience";
 import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
+import Certificates from "./sections/Certifcates/Certificates";
+import Contact from "./sections/Contact/Contact";
 function App() {
   Aos.init();
   return (
@@ -17,8 +19,10 @@ function App() {
         <Home />
         <About />
         <WorkExpirience />
-        <Skills/>
-        <Projects/>
+        <Skills />
+        <Projects />
+        <Certificates />
+        <Contact />
       </div>
     </div>
   );

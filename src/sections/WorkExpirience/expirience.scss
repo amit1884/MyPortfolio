@@ -3,6 +3,7 @@
     .expirience-container{
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         .expirience-card{
             flex:1;
             margin:10px;
@@ -16,6 +17,9 @@
                 img{
                     width:100%;
                 }
+            }
+            .expirience-card-body{
+                min-height: 300px;
             }
             .empty{
                 height:50px;
@@ -81,5 +85,18 @@
         text-align: right;
         font-weight: 550;
         font-size: 14px;
+    }
+}
+.expirience-desc-container{
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li{
+            margin:10px auto;
+            font-size: 16px;
+            border-bottom: 1px solid lightgray;
+        }
     }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import './expirience.scss'
 function WorkDetails({ data }) {
   return (
-    <table className="expirience-details-table">
+    <table className="expirience-details-table" data-aos="slide-right">
       <tr className="expirience-details-row">
         <th>Company Name </th>
         <td>{data?.companyName}</td>

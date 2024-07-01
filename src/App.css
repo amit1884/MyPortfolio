@@ -4,19 +4,18 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-.app{
+.app {
   position: relative;
   width: 100%;
 }
-.main{
-  margin-left:300px;
-
+.main {
+  margin-left: 300px;
 }
-@media(max-width:990px){
-  .main{
-    margin-left:0;
+@media (max-width: 990px) {
+  .main {
+    margin-left: 0;
   }
 }
-.section{
-  height: 100vh;
+.section {
+  min-height: 100vh;
 }
