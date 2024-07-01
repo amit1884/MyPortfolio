@@ -11,3 +11,9 @@
     background-color: purple;
     border-radius: 20px;
   }
+
+  @media (max-width:991px){
+    .section-heading{
+      font-size: 30px;
+    }
+  }
