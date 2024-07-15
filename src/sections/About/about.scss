@@ -1,11 +1,21 @@
 .about-section {
   padding: 30px;
+  margin-top: 30px;
 }
-.about-text{
-    margin-top:20px;
-    .about-content{
-        font-size: 16px;
-        line-height: 30px;
-        font-weight: 550;
-    }
+.about-text {
+  margin-top: 20px;
+  .about-content {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 550;
+  }
+}
+.personal-details-header {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.personal-details {
+  margin: 10px;
 }

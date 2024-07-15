@@ -16,7 +16,7 @@ function WorkExpirience() {
       <div className="section expirience-section">
         <SectionHeading text="Work Expirience" />
 
-        <div className="expirience-container">
+        <div className="row expirience-container mt-4">
           {workExpirienceData?.map((item, index) => {
             return (
               <WorkExpirienceCard item={item} index={index} key={item?.id}/>

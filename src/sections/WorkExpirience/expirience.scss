@@ -1,12 +1,9 @@
 .expirience-section{
     padding:30px;
     .expirience-container{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    
         .expirience-card{
             flex:1;
-            margin:10px;
             overflow: hidden;
             position: relative;
             .expirience-card-header{
@@ -99,4 +96,13 @@
             border-bottom: 1px solid lightgray;
         }
     }
+}
+
+@media(max-width:991px){
+.expirience-card{
+    margin:10px auto;
+}
+.old-expirience{
+    margin-top: 10px !important;
+}
 }

@@ -1,3 +1,26 @@
 .contact-section{
     padding:30px;
 }
+.contact-details{
+    display: flex;
+    align-items: flex-start;
+    margin:30px auto;
+    .contact-icon{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 20px;
+        background-color: #EAB6FF;
+        padding:20px;
+        margin-right: 20px;
+        border-radius: 50%;
+        color:#921cc1;
+    }
+    .contact-data{
+        .contact-lable{
+            font-size: 20px;
+            font-weight: 550;
+            color:#921cc1;
+        }
+    }
+}

@@ -5,8 +5,8 @@ function WorkDescription({ data }) {
     <div className="expirience-desc-container" data-aos="slide-left">
       <ul>
         {data?.length > 0 &&
-          data?.map((item, index) => {
-            return <li>{item}</li>;
+          data?.slice(0,3)?.map((item, index) => {
+            return <li key={index}>{item}</li>;
           })}
       </ul>
     </div>

@@ -13,6 +13,9 @@ function Home() {
         <div className="my-pic" data-aos="slide-left">
           <img src ={Avatar} alt="" className="pic"/>
         </div>
+        <div className="my-pic-mb" data-aos="slide-left">
+          <img src ={Avatar} alt="" className="pic"/>
+        </div>
       </div>
     </Element>
   );
