@@ -1,28 +1,51 @@
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./sections/Home/Home";
-import About from "./sections/About/About";
+import React, { Suspense, lazy } from "react";
 import Aos from "aos";
-import WorkExpirience from "./sections/WorkExpirience/WorkExpirience";
-import Projects from "./sections/Projects/Projects";
-import Skills from "./sections/Skills/Skills";
-import Certificates from "./sections/Certifcates/Certificates";
-import Contact from "./sections/Contact/Contact";
 import "aos/dist/aos.css";
 import "./App.css";
+import Spinner from "./components/Loader/Spinner";
+
+// Lazy load the components
+const Navbar = lazy(() => import("./components/Navbar/Navbar"));
+const Home = lazy(() => import("./sections/Home/Home"));
+const About = lazy(() => import("./sections/About/About"));
+const WorkExpirience = lazy(() =>
+  import("./sections/WorkExpirience/WorkExpirience")
+);
+const Projects = lazy(() => import("./sections/Projects/Projects"));
+const Skills = lazy(() => import("./sections/Skills/Skills"));
+const Certificates = lazy(() => import("./sections/Certifcates/Certificates"));
+const Contact = lazy(() => import("./sections/Contact/Contact"));
 
 function App() {
   Aos.init();
+
   return (
     <div className="app">
-      <Navbar />
+      <Suspense fallback={<Spinner />}>
+        <Navbar />
+      </Suspense>
       <div className="main">
-        <Home />
-        <About />
-        <WorkExpirience />
-        <Skills />
-        <Projects />
-        <Certificates />
-        <Contact />
+        <Suspense fallback={<Spinner />}>
+          <Home />
+        </Suspense>
+        <Suspense fallback={<Spinner />}>
+          <About />
+        </Suspense>
+        <Suspense fallback={<Spinner />}>
+          <WorkExpirience />
+        </Suspense>
+        <Suspense fallback={<Spinner />}>
+          <Skills />
+        </Suspense>
+        <Suspense fallback={<Spinner />}>
+          <Projects />
+        </Suspense>
+        <Suspense fallback={<Spinner />}>
+          <Certificates />
+        </Suspense>
+        <Suspense fallback={<Spinner />}>
+          <Contact />
+        </Suspense>
       </div>
     </div>
   );
