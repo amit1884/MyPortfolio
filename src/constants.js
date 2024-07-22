@@ -1,6 +1,12 @@
 import AnchantoLogo from "./assets/images/anchanto-removebg-preview.png";
 import ByjusLogo from "./assets/images/Byjus-Logo.png";
 import CollegeduniaLogo from "./assets/images/Collegedunia_Logo-removebg-preview.png";
+import LandingSS from "./assets/images/projects/landing_page_ss.png";
+import TaskManagment_Home from "./assets/images/projects/task_managment_home_ss.png";
+import TaskManagment_Add from "./assets/images/projects/task_managment_add_ss.png";
+import Carousel_SS from "./assets/images/projects/animated_carousel_ss.png";
+import Story_ss from "./assets/images/projects/story_ss.png";
+import Story_Content_ss from "./assets/images/projects/story-content_ss.png";
 export const workExpirienceData = [
   {
     id: 1,
@@ -87,6 +93,92 @@ by 30 percent.`,
       `Developed the frontend of an order management system,Control Tower using modern web technologies such as Next.js
 and SCSS`,
       `Executed unit testing using Cypress.io to guarantee the quality and reliability of the codebase`,
+    ],
+  },
+];
+
+export const projectsList = [
+  {
+    tab: "Full Stack",
+    projects: [
+      {
+        id: 1,
+        title: "Chat Application",
+        description:
+          "Developed a secure and intuitive one-on-one chat application using the MERN stack. By implementing JWT authentication, I ensured robust security for user interactions. The application allows users to add friends and engage in seamless, real-time communication through an easy-to-navigate interface.",
+        github: "https://github.com/amit1884/ChatApp",
+        deployed: "NA",
+        screenshots: [LandingSS, LandingSS, LandingSS],
+        techStack: ["React.Js", "SCSS", "Node.js", "Express.Js", "MongoDb"],
+      },
+      {
+        id: 2,
+        title: "Task Managment Web App",
+        description:
+          " Developed a task management web app which allows users to create, edit, and delete tasks, offering a user-friendly interface and reliable performance.",
+        github: "https://github.com/amit1884/TaskManagement_Assign_Client",
+        deployed: "https://task-management-app-murex.vercel.app/",
+        screenshots: [TaskManagment_Home, TaskManagment_Add],
+        techStack: ["React.Js", "SCSS", "Node.js", "Express.Js", "MongoDb"],
+      },
+    ],
+  },
+  {
+    tab: "Frontend",
+    projects: [
+      {
+        id: 1,
+        title: "Responsive Landing Pag",
+        description: "A fully responsive landing page.",
+        github: "https://github.com/amit1884/Inito_Responsive_landing_Page",
+        deployed: "https://inito-landing-page.vercel.app/",
+        screenshots: [LandingSS, LandingSS, LandingSS],
+        techStack: ["React.Js", "SCSS"],
+      },
+      {
+        id: 2,
+        title: "Whatsapp Story/Status Component",
+        description:
+          "An independent UI element which can be added in any react.js project to list story or status of users as in whatsapp/instagram",
+        github: "https://github.com/amit1884/StoryProtoType",
+        deployed: "https://rd978d.csb.app/",
+        screenshots: [Story_ss, Story_Content_ss],
+        techStack: ["React.Js", "CSS"],
+      },
+      {
+        id: 3,
+        title: "Animated Carousel",
+        description: "An animated image carousel built using react.js.",
+        github: "https://github.com/amit1884/AnimatedCarousel",
+        deployed: "https://5dkyg4-5173.csb.app/",
+        screenshots: [Carousel_SS, Carousel_SS],
+        techStack: ["React.Js", "Typescript", "CSS", "Vite"],
+      },
+    ],
+  },
+  {
+    tab: "Mobile App",
+    projects: [
+      {
+        id: 1,
+        title: "Todo App",
+        description:
+          " Developed a todo native mobile app which allows users to create, edit, and delete tasks, offering a user-friendly interface and reliable performance.",
+        github: "https://github.com/amit1884/TaskManagment-App",
+        deployed: "NA",
+        screenshots: [LandingSS, LandingSS, LandingSS],
+        techStack: ["React Native", "Node.js", "Express.Js", "MongoDb"],
+      },
+      {
+        id: 2,
+        title: "MovieFix",
+        description:
+          "An Android app that displays a list of movies by fetching data from an API. It features a nice user interface with pagination in both directions and allows users to filter movies by year and name.",
+        github: "https://github.com/amit1884/moviefix",
+        deployed: "NA",
+        screenshots: [LandingSS, LandingSS, LandingSS],
+        techStack: ["React Native"],
+      },
     ],
   },
 ];

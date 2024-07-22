@@ -1,0 +1,17 @@
+.skill-scale {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  .scale {
+    width: 100%;
+    height: 5px;
+    border-radius: 20px;
+  }
+  .active-scale {
+    background-color: purple;
+  }
+  .inactive-scale {
+    background-color: gray;
+  }
+}

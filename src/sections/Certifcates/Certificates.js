@@ -2,8 +2,6 @@ import React from "react";
 import { Element } from "react-scroll";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import GlassCard from "../../components/GlassCard/GlassCard";
-import AnchantoCerti from "../../assets/certificates/AnchantoInternshipCompletionCertificate_page-0001.jpg";
-import CollegeduniaCerti from "../../assets/certificates/collegeduniaCerti_page-0001.jpg";
 import AndroidCerti from "../../assets/certificates/Android_Developement_Udemy_Certificate_page-0001.jpg";
 import ProblemSolvingBasic from "../../assets/certificates/problem-solving.png";
 import ProblemSolvingInter from "../../assets/certificates/problem-solving-adv.png";
@@ -20,25 +18,6 @@ function Certificates() {
   return (
     <Element name="certificates" className="section certificate-section">
       <SectionHeading text="Certificates & Achievements" />
-      <div
-        className="row mt-4"
-        style={{ display: "flex", justifyContent: "center" }}
-      >
-        <div className="col-md-4 col-sm-12 ">
-          <GlassCard>
-            <div className="certificate-container">
-              <img src={AnchantoCerti} alt="" className="certificate-img" />
-            </div>
-          </GlassCard>
-        </div>
-        <div className="col-md-4 col-sm-12 ">
-          <GlassCard>
-            <div className="certificate-container">
-              <img src={CollegeduniaCerti} alt="" className="certificate-img" />
-            </div>
-          </GlassCard>
-        </div>
-      </div>
       <div className="row mt-4">
         {/* Hackerrank */}
         <div className="col-md-4 col-sm-12 ">
