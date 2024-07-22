@@ -20,7 +20,7 @@ function Certificates() {
       <SectionHeading text="Certificates & Achievements" />
       <div className="row mt-4">
         {/* Hackerrank */}
-        <div className="col-md-4 col-sm-12 ">
+        <div className="col-md-4 col-sm-12 mt-4">
           <SlickCarousel>
             <GlassCard>
               <div className="certificate-container">
@@ -48,7 +48,7 @@ function Certificates() {
           </SlickCarousel>
         </div>
         {/* Udemy */}
-        <div className="col-md-4 col-sm-12 ">
+        <div className="col-md-4 col-sm-12 mt-4">
           <SlickCarousel>
             <GlassCard>
               <div className="certificate-container">
@@ -76,7 +76,7 @@ function Certificates() {
           </SlickCarousel>
         </div>
         {/* College */}
-        <div className="col-md-4 col-sm-12 ">
+        <div className="col-md-4 col-sm-12 mt-4">
           <SlickCarousel>
             <GlassCard>
               <div className="certificate-container">

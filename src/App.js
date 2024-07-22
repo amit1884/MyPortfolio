@@ -1,21 +1,19 @@
 import Navbar from "./components/Navbar/Navbar";
-import "./App.css";
 import Home from "./sections/Home/Home";
 import About from "./sections/About/About";
-import { useEffect, useState } from "react";
 import Aos from "aos";
-import "aos/dist/aos.css";
 import WorkExpirience from "./sections/WorkExpirience/WorkExpirience";
 import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
 import Certificates from "./sections/Certifcates/Certificates";
 import Contact from "./sections/Contact/Contact";
-import { FaHamburger } from "react-icons/fa";
+import "aos/dist/aos.css";
+import "./App.css";
+
 function App() {
   Aos.init();
   return (
     <div className="app">
-     
       <Navbar />
       <div className="main">
         <Home />
