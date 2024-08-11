@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
@@ -18,7 +18,18 @@ const Contact = lazy(() => import("./sections/Contact/Contact"));
 
 function App() {
   Aos.init();
+  useEffect(() => {
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+    };
 
+    document.addEventListener("contextmenu", handleContextMenu);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+    };
+  }, []);
   return (
     <div className="app">
       <Suspense fallback={<Spinner />}>

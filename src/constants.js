@@ -267,7 +267,7 @@ export const skills = {
     },
     {
       id: 4,
-      name: "HTML/HTML5",
+      name: "HTML5",
       score: 10,
     },
     {

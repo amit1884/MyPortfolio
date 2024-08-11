@@ -22,7 +22,7 @@ function About() {
             field to deliver high-quality solutions.
           </p>
         </GlassCard>
-        <div className="container">
+        <div className="container mt-4">
           <div className="row">
             <div className="col-md-6 col-sm-12">
               <div className="personal-details-header">Education Details</div>
