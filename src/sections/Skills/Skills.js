@@ -15,33 +15,35 @@ function Skills() {
           <div className="col-md-12 col-sm-12">
             <GlassCard customClass={" mt-4"}>
               <div className="skill-heading">Programming Languages</div>
-              <div className="skill-container">
-                <div className="row">
-                  {skills.languages?.map((skill, index) => {
-                    return (
-                      <div className="col-md-2 col-sm-6">
-                        <SkillRate skill={skill} />
-                      </div>
-                    );
-                  })}
-                </div>
+              <div className="row flex-center">
+                {skills.languages?.map((skill, index) => {
+                  return (
+                    <div
+                      className="col-md-2 col-sm-6 flex-center "
+                      style={{ width: "auto" }}
+                    >
+                      <SkillRate skill={skill} />
+                    </div>
+                  );
+                })}
               </div>
             </GlassCard>
           </div>
           <div className="col-md-12 col-sm-12">
             <GlassCard customClass={"mt-4"}>
               <div className="skill-heading">Frameworks and Technologies</div>
-              <div className="skill-container">
-                <div className="row flex-center">
-                  {skills.framework?.map((skill, index) => {
-                    return (
-                      <div className="col-md-2 col-sm-6">
-                        {" "}
-                        <SkillRate skill={skill} />
-                      </div>
-                    );
-                  })}
-                </div>
+              <div className="row flex-center">
+                {skills.framework?.map((skill, index) => {
+                  return (
+                    <div
+                      className="col-md-2 col-sm-6 "
+                      style={{ width: "auto" }}
+                    >
+                      {" "}
+                      <SkillRate skill={skill} />
+                    </div>
+                  );
+                })}
               </div>
             </GlassCard>
           </div>

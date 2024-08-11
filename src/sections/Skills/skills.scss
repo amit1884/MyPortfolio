@@ -15,15 +15,6 @@
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
-    .skill-container {
-      margin: 20px 10px;
-      display: flex;
-      align-items: center;
-      width: 100%;
-      .skill-name {
-        width: 20%;
-      }
-    }
     img {
       width: 50px;
       margin-right: 10px;
@@ -77,9 +68,22 @@
     border: 5px solid purple;
   }
 }
+   
 .skill-heading{
   font-size: 30px;
   color:#000;
   font-weight: 600;
   margin-bottom: 10px;
+}
+@media (max-width:991px){
+  .skill-rate{
+    width:90px !important;
+    height:90px !important;
+  }
+  .skill-heading{
+    font-size: 20px;
+    color:#000;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
 }
