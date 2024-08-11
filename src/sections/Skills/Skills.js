@@ -2,12 +2,9 @@ import React from "react";
 import { Element } from "react-scroll";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import GlassCard from "../../components/GlassCard/GlassCard";
-import CLogo from "../../assets/images/skils/C_Logo.png";
-import CPPLogo from "../../assets/images/skils/cpp.png";
-import JSLogo from "../../assets/images/skils/js.webp";
-import ReactLogo from '../../assets/images/skils/react-native.png'
 import "./skills.scss";
-import SkillRate from "../../components/SkillRate/SkillRate";
+import { skills } from "../../constants";
+import SkillRate from "./SkillRate";
 
 function Skills() {
   return (
@@ -15,26 +12,40 @@ function Skills() {
       <div className="skills-section">
         <SectionHeading text="Skills" />
         <div className="row" style={{ marginTop: "30px" }}>
-          <div className="col-md-4 col-sm-12">
-            <GlassCard customClass={"mt-4"}>
-              <div className="skill-header">Programming Languages</div>
-              <div className="skills">
-                <div className="skill-container">
-                  <p className="skill-name"><b>C</b></p>
-                  <SkillRate rating={3} />
-                </div>
-                <div className="skill-container">
-                <b>C++</b>
-                  <SkillRate rating={3} />
-                </div>
-                <div className="skill-container">
-                <b>Javascript</b>
-                  <SkillRate rating={4} />
+          <div className="col-md-12 col-sm-12">
+            <GlassCard customClass={" mt-4"}>
+              <div className="skill-heading">Programming Languages</div>
+              <div className="skill-container">
+                <div className="row">
+                  {skills.languages?.map((skill, index) => {
+                    return (
+                      <div className="col-md-2 col-sm-6">
+                        <SkillRate skill={skill} />
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </GlassCard>
           </div>
-          <div className="col-md-4 col-sm-12">
+          <div className="col-md-12 col-sm-12">
+            <GlassCard customClass={"mt-4"}>
+              <div className="skill-heading">Frameworks and Technologies</div>
+              <div className="skill-container">
+                <div className="row flex-center">
+                  {skills.framework?.map((skill, index) => {
+                    return (
+                      <div className="col-md-2 col-sm-6">
+                        {" "}
+                        <SkillRate skill={skill} />
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </GlassCard>
+          </div>
+          {/* <div className="col-md-4 col-sm-12">
             <GlassCard customClass={"mt-4"}>
               <div className="skill-header">Frameworks</div>
               <div className="skills">
@@ -52,8 +63,8 @@ function Skills() {
                 </div>
               </div>
             </GlassCard>
-          </div>
-          <div className="col-md-4 col-sm-12">
+          </div> */}
+          {/* <div className="col-md-4 col-sm-12">
             <GlassCard customClass={"mt-4"}>
               <div className="skill-header">Developer Tools</div>
               <div className="skills">
@@ -71,7 +82,7 @@ function Skills() {
                 </div>
               </div>
             </GlassCard>
-          </div>
+          </div> */}
         </div>
       </div>
     </Element>

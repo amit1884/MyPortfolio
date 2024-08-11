@@ -5,12 +5,12 @@ import GlassCard from "../../components/GlassCard/GlassCard";
 import AndroidCerti from "../../assets/certificates/Android_Developement_Udemy_Certificate_page-0001.jpg";
 import ProblemSolvingBasic from "../../assets/certificates/problem-solving.png";
 import ProblemSolvingInter from "../../assets/certificates/problem-solving-adv.png";
-import PCONCerti from '../../assets/certificates/AmitRajPCON_page-0001.jpg'
-import consoleLogCerti from '../../assets/certificates/Console.log(Replicate)_Third_page-0001.jpg'
-import WebTeamCerti from '../../assets/certificates/Amit RAj_WebTeam.jpg'
+import PCONCerti from "../../assets/certificates/AmitRajPCON_page-0001.jpg";
+import consoleLogCerti from "../../assets/certificates/Console.log(Replicate)_Third_page-0001.jpg";
+import WebTeamCerti from "../../assets/certificates/Amit RAj_WebTeam.jpg";
 import SqlBasic from "../../assets/certificates/sql-basic.png";
-import JavascriptCerti from '../../assets/certificates/JavacriptCerti.png'
-import HtmlCerti from '../../assets/certificates/HTML_Certi.png'
+import JavascriptCerti from "../../assets/certificates/JavacriptCerti.png";
+import HtmlCerti from "../../assets/certificates/HTML_Certi.png";
 import "./certificates.scss";
 import SlickCarousel from "../../components/SlickCarousel/SlickCarousel";
 
@@ -20,7 +20,7 @@ function Certificates() {
       <SectionHeading text="Certificates & Achievements" />
       <div className="row mt-4">
         {/* Hackerrank */}
-        <div className="col-md-4 col-sm-12 mt-4">
+        <div className="col-md-6 col-sm-12 mt-4">
           <SlickCarousel>
             <GlassCard>
               <div className="certificate-container">
@@ -48,24 +48,16 @@ function Certificates() {
           </SlickCarousel>
         </div>
         {/* Udemy */}
-        <div className="col-md-4 col-sm-12 mt-4">
+        <div className="col-md-6 col-sm-12 mt-4">
           <SlickCarousel>
             <GlassCard>
               <div className="certificate-container">
-                <img
-                  src={JavascriptCerti}
-                  alt=""
-                  className="certificate-img"
-                />
+                <img src={JavascriptCerti} alt="" className="certificate-img" />
               </div>
             </GlassCard>
             <GlassCard>
               <div className="certificate-container">
-                <img
-                  src={HtmlCerti}
-                  alt=""
-                  className="certificate-img"
-                />
+                <img src={HtmlCerti} alt="" className="certificate-img" />
               </div>
             </GlassCard>
             <GlassCard>
@@ -75,25 +67,20 @@ function Certificates() {
             </GlassCard>
           </SlickCarousel>
         </div>
+        </div>
+        <div className="row mt-4">
         {/* College */}
-        <div className="col-md-4 col-sm-12 mt-4">
+        <div className="col-md-3 col-sm-12 mt-4"></div>
+        <div className="col-md-6 col-sm-12 mt-4">
           <SlickCarousel>
             <GlassCard>
               <div className="certificate-container">
-                <img
-                  src={consoleLogCerti}
-                  alt=""
-                  className="certificate-img"
-                />
+                <img src={consoleLogCerti} alt="" className="certificate-img" />
               </div>
             </GlassCard>
             <GlassCard>
               <div className="certificate-container">
-                <img
-                  src={PCONCerti}
-                  alt=""
-                  className="certificate-img"
-                />
+                <img src={PCONCerti} alt="" className="certificate-img" />
               </div>
             </GlassCard>
             <GlassCard>

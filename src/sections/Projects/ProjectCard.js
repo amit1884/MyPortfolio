@@ -4,7 +4,7 @@ import SlickCarousel from "../../components/SlickCarousel/SlickCarousel";
 import "./projects.scss";
 function ProjectCard({ project }) {
   return (
-    <GlassCard customClass={"mt-4"}>
+    <GlassCard customClass={"mt-4 custom-project-card"}>
       <div className="project-card-header">
         <SlickCarousel>
           {project?.screenshots?.map((item, index) => {
@@ -24,6 +24,10 @@ function ProjectCard({ project }) {
         <div className="project-desc">{project?.description}</div>
         <table>
           <tr>
+            <th>Title: </th>
+            <td>{project?.title}</td>
+          </tr>
+          <tr>
             <th>Source Code: </th>
             <td>
               <a href={project?.github} target="_blank" rel="noreferrer">
@@ -41,7 +45,7 @@ function ProjectCard({ project }) {
           </tr>
           <tr>
             <th>Tech Stack: </th>
-            <td>{project?.techStack.join(', ')}</td>
+            <td>{project?.techStack.join(", ")}</td>
           </tr>
         </table>
       </div>
