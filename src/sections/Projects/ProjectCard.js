@@ -38,9 +38,13 @@ function ProjectCard({ project }) {
           <tr>
             <th>Deployed Link: </th>
             <td>
-              <a href={project?.deployed} target="_blank" rel="noreferrer">
-                {project?.deployed}
-              </a>
+              {project?.deployed !== "NA" ? (
+                <a href={project?.deployed} target="_blank" rel="noreferrer">
+                  {project?.deployed}
+                </a>
+              ) : (
+                <div>Not Available</div>
+              )}
             </td>
           </tr>
           <tr>

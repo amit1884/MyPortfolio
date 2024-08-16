@@ -3,6 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
 import Spinner from "./components/Loader/Spinner";
+import 'leaflet/dist/leaflet.css';
 
 // Lazy load the components
 const Navbar = lazy(() => import("./components/Navbar/Navbar"));
@@ -30,6 +31,7 @@ function App() {
       document.removeEventListener("contextmenu", handleContextMenu);
     };
   }, []);
+  
   return (
     <div className="app">
       <Suspense fallback={<Spinner />}>

@@ -15,12 +15,12 @@ import RealEziSS1 from "./assets/images/projects/realezi1.png";
 import RealEziSS2 from "./assets/images/projects/realezi2.png";
 import RealEziSS3 from "./assets/images/projects/realezi3.png";
 import RealEziSS4 from "./assets/images/projects/realezi4.png";
-// import TodoApp1 from "./assets/images/projects/todo-home.jpeg";
-// import TodoApp2 from "./assets/images/projects/todoapp2.jpeg";
-// import TodoApp3 from "./assets/images/projects/todo3.jpeg";
-// import TodoApp4 from "./assets/images/projects/todo4.jpeg";
-// import MovieFix1 from "./assets/images/projects/moviefix1.jpeg";
-// import MovieFix2 from "./assets/images/projects/moviefix2.jpeg";
+import TodoApp1 from "./assets/images/projects/todo-home.jpeg";
+import TodoApp2 from "./assets/images/projects/todoapp2.jpeg";
+import TodoApp3 from "./assets/images/projects/todo3.jpeg";
+import TodoApp4 from "./assets/images/projects/todo4.jpeg";
+import MovieFix1 from "./assets/images/projects/moviefix1.jpeg";
+import MovieFix2 from "./assets/images/projects/moviefix2.jpeg";
 
 export const workExpirienceData = [
   {
@@ -116,16 +116,16 @@ export const projectsList = [
   {
     tab: "Full Stack",
     projects: [
-      {
-        id: 1,
-        title: "Chat Application",
-        description:
-          "Developed a secure and intuitive one-on-one chat application using the MERN stack. By implementing JWT authentication, I ensured robust security for user interactions. The application allows users to add friends and engage in seamless, real-time communication through an easy-to-navigate interface.",
-        github: "https://github.com/amit1884/ChatApp",
-        deployed: "NA",
-        screenshots: [LandingSS, LandingSS, LandingSS],
-        techStack: ["React.Js", "SCSS", "Node.js", "Express.Js", "MongoDb"],
-      },
+      // {
+      //   id: 1,
+      //   title: "Chat Application",
+      //   description:
+      //     "Developed a secure and intuitive one-on-one chat application using the MERN stack. By implementing JWT authentication, I ensured robust security for user interactions. The application allows users to add friends and engage in seamless, real-time communication through an easy-to-navigate interface.",
+      //   github: "https://github.com/amit1884/ChatApp",
+      //   deployed: "NA",
+      //   screenshots: [LandingSS, LandingSS, LandingSS],
+      //   techStack: ["React.Js", "SCSS", "Node.js", "Express.Js", "MongoDb"],
+      // },
       {
         id: 2,
         title: "Task Managment Web App",
@@ -180,31 +180,31 @@ export const projectsList = [
       },
     ],
   },
-  // {
-  //   tab: "Mobile App",
-  //   projects: [
-  //     {
-  //       id: 1,
-  //       title: "Todo App",
-  //       description:
-  //         " Developed a todo native mobile app which allows users to create, edit, and delete tasks, offering a user-friendly interface and reliable performance.",
-  //       github: "https://github.com/amit1884/TaskManagment-App",
-  //       deployed: "NA",
-  //       screenshots: [TodoApp1, TodoApp2, TodoApp3, TodoApp4],
-  //       techStack: ["React Native", "Node.js", "Express.Js", "MongoDb"],
-  //     },
-  //     {
-  //       id: 2,
-  //       title: "MovieFix",
-  //       description:
-  //         "An Android app that displays a list of movies by fetching data from an API. It features a nice user interface with pagination in both directions and allows users to filter movies by year and name.",
-  //       github: "https://github.com/amit1884/moviefix",
-  //       deployed: "NA",
-  //       screenshots: [MovieFix1, MovieFix2],
-  //       techStack: ["React Native"],
-  //     },
-  //   ],
-  // },
+  {
+    tab: "Mobile App",
+    projects: [
+      {
+        id: 1,
+        title: "Todo App",
+        description:
+          " Developed a todo native mobile app which allows users to create, edit, and delete tasks, offering a user-friendly interface and reliable performance.",
+        github: "https://github.com/amit1884/TaskManagment-App",
+        deployed: "NA",
+        screenshots: [TodoApp1, TodoApp2, TodoApp3, TodoApp4],
+        techStack: ["React Native", "Node.js", "Express.Js", "MongoDb"],
+      },
+      {
+        id: 2,
+        title: "MovieFix",
+        description:
+          "An Android app that displays a list of movies by fetching data from an API. It features a nice user interface with pagination in both directions and allows users to filter movies by year and name.",
+        github: "https://github.com/amit1884/moviefix",
+        deployed: "NA",
+        screenshots: [MovieFix1, MovieFix2],
+        techStack: ["React Native"],
+      },
+    ],
+  },
 ];
 export const skills = {
   languages: [
