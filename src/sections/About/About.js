@@ -54,12 +54,12 @@ function About() {
               <GlassCard>
                 <div className="personal-details">
                   <span>
-                    <b>Current Company: </b> Think and Learn Pvt. Ltd - (Byju's)
+                    <b>Current Company: </b> NEWME
                   </span>
                 </div>
                 <div className="personal-details">
                   <span>
-                    <b>Fulltime Expirience: </b> 2 Years 1 Month
+                    <b>Fulltime Expirience: </b> 3 Years 
                   </span>
                 </div>
                 <div className="personal-details">
@@ -69,8 +69,7 @@ function About() {
                 </div>
                 <div className="personal-details">
                   <span>
-                    <b>Current Location: </b> Ranchi, Jharkhand
-                  </span>
+                    <b>Current Location: </b> Bengaluru, Karnataka                 </span>
                 </div>
               </GlassCard>
             </div>
