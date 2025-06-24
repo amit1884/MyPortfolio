@@ -3,7 +3,9 @@ import { Element } from "react-scroll";
 import "./about.scss";
 import GlassCard from "../../components/GlassCard/GlassCard";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
+import { getYearsAndMonths } from "../../utils";
 function About() {
+  const exp=getYearsAndMonths('10-06-2022')
   return (
     <Element name="about" className="section">
       <div className="about-section">
@@ -59,7 +61,7 @@ function About() {
                 </div>
                 <div className="personal-details">
                   <span>
-                    <b>Fulltime Expirience: </b> 3 Years 
+                    <b>Fulltime Expirience: </b> {exp}
                   </span>
                 </div>
                 <div className="personal-details">

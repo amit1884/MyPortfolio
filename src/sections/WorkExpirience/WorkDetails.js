@@ -1,5 +1,6 @@
 import React from "react";
 import './expirience.scss'
+import { getYearsAndMonths } from "../../utils";
 function WorkDetails({ data }) {
   return (
     <table className="expirience-details-table" data-aos="slide-right">
@@ -21,7 +22,7 @@ function WorkDetails({ data }) {
       </tr>
       <tr className="expirience-details-row">
         <th>Expirience </th>
-        <td>{data?.tenure}</td>
+        <td>{data?.current?getYearsAndMonths(data?.startDate) :data?.tenure}</td>
       </tr>
       <tr className="expirience-details-row">
         <th>Location </th>
