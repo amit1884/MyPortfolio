@@ -18,7 +18,7 @@ function Contact() {
               </div>
               <div className="contact-data">
                 <div className="contact-lable">Location</div>
-                <div className="contact-value">Ranchi, Jharkhand, India</div>
+                <div className="contact-value">Bengaluru, Karnataka, India</div>
               </div>
             </div>
             <div className="contact-details">

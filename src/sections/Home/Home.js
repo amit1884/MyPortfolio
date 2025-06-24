@@ -1,6 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
-import Avatar from "../../assets/images/Amit-without-bg.png";
+import Avatar from "../../assets/images/main.png";
 import "./home.scss";
 function Home() {
   return (
@@ -9,7 +9,9 @@ function Home() {
         <div className="text-content" data-aos="slide-right">
           <div className="main-heading">Amit Raj</div>
           <div className="typing-container">
-            <div className="sub-heading typing-text">I am a Software Engineer</div>
+            <div className="sub-heading typing-text">
+              I am a Software Engineer
+            </div>
           </div>
         </div>
         <div className="my-pic" data-aos="slide-left">

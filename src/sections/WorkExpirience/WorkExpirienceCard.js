@@ -7,14 +7,17 @@ import GlassButton from "../../components/Button/GlassButton";
 function WorkExpirienceCard({ item, index }) {
   const [openDetails, setOpenDetails] = useState(false);
   return (
-    <div className="col-md-4 col-12">
-      <GlassCard
-        customClass={`expirience-card `}
-        aosData="fade-up"
-      >
+    <div className="col-md-6 col-12">
+      <GlassCard customClass={`expirience-card `} aosData="fade-up">
         {item?.current && <div class="corner-tag"></div>}
-        <div className="expirience-card-header">
-          <img src={item.logo} alt="" />
+        <div className={"expirience-card-header"}>
+          <img
+            src={item.logo}
+            className={`${
+              item?.companyName === "NEWME" ? "small-img" : "big-img"
+            }`}
+            alt=""
+          />
         </div>
         <div className="expirience-card-body">
           {!openDetails ? (

@@ -11,9 +11,9 @@ function About() {
         <GlassCard customClass={"about-text"}>
           <p className="about-content">
             I am a dedicated software development professional with 2 years of
-            experience, holding a B.Tech degree in Computer Science and
-            Engineering from NIT Jamshedpur. My expertise primarily lies in
-            frontend development, where I excel in utilizing various
+            and 10 months of experience, holding a B.Tech degree in Computer
+            Science and Engineering from NIT Jamshedpur. My expertise primarily
+            lies in frontend development, where I excel in utilizing various
             cutting-edge technologies to create dynamic and user-friendly
             interfaces. In addition to my frontend prowess, I have a strong
             interest in backend technologies, allowing me to maintain a
@@ -69,7 +69,8 @@ function About() {
                 </div>
                 <div className="personal-details">
                   <span>
-                    <b>Current Location: </b> Bengaluru, Karnataka                 </span>
+                    <b>Current Location: </b> Bengaluru, Karnataka
+                  </span>
                 </div>
               </GlassCard>
             </div>

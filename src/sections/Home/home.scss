@@ -6,9 +6,9 @@
   .my-pic {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 50px;
     .pic {
-      width: 700px;
+      width: 600px;
     }
   }
   .text-content {
@@ -27,13 +27,18 @@
     }
   }
 }
-.my-pic-mb{
-    display: none;
+.my-pic-mb {
+  display: none;
 }
 @media (max-width: 991px) {
   .text-content {
-    height:max-content !important;
-    margin:50px;
+    height: max-content !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .main-heading {
       font-size: 50px !important;
       font-weight: 600;
@@ -46,41 +51,52 @@
     }
   }
   .my-pic {
-   display: none;
+    display: none;
   }
-.home-section{
+  .home-section {
     flex-direction: column !important;
     align-items: center !important;
-}
-.my-pic-mb{
-    display: block;
-}
+  }
+  .my-pic-mb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    img {
+      width: 300px;
+    }
+  }
 }
 .typing-container {
-  font-size: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid;
-  width: 18ch; 
-  animation: typing 4s steps(22) 1s infinite, blink-caret 0.75s step-end infinite;
-}
-
-/* Typing animation */
-@keyframes typing {
-  from {
+  .typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    font-family: monospace;
     width: 0;
+    animation: typing 3s steps(25, end), blink-caret 0.75s step-end infinite;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
   }
-  to {
-    width: 18ch; /* Width matches the length of the text */
-  }
-}
 
-/* Blinking cursor animation */
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 25ch; // match your character count
+    }
+    100% {
+      width: 0;
+    }
   }
-  50% {
-    border-color: black;
+
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
   }
 }

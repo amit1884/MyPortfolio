@@ -21,13 +21,91 @@ import TodoApp3 from "./assets/images/projects/todo3.jpeg";
 import TodoApp4 from "./assets/images/projects/todo4.jpeg";
 import MovieFix1 from "./assets/images/projects/moviefix1.jpeg";
 import MovieFix2 from "./assets/images/projects/moviefix2.jpeg";
+import Newme from "./assets/images/newme.png";
 
 export const workExpirienceData = [
   {
     id: 1,
+    companyName: "NEWME",
+    logo: Newme,
+    designation: "Frontend Engineer",
+    type: "full_time",
+    startDate: "23-09-2024",
+    endDate: "Current",
+    current: true,
+    location: "Bangalore, Karnataka",
+    skills: [
+      "React Native",
+      "React.Js",
+      "Javascript",
+      "Tailwind CSS",
+      "Redux",
+      "React RTK query",
+      "Typescript",
+      "Next.js",
+      "AWS",
+      "Git",
+      "Github",
+    ],
+    tenure: "8 Months",
+    description: [
+      `Designing a new onboarding journey for social media influencers to streamline content management for the NEWME brand — aimed at boosting visibility into performance metrics and improving fund allocation, with a projected 40% increase in influencer ROI tracking accuracy.`,
+      `Developed a new referral onboarding flow, projected to improve new user conversion rates by 10%.`,
+      `Implemented a flexible refund mechanism allowing users to select the destination for refunded payments —
+reducing average refund time from 3 days to 1 day and significantly improving user satisfaction.`,
+      `Redesigned the cart and checkout experience, reducing the average checkout time by 30%, contributing to
+higher conversion rates and increased average order value.`,
+      `Optimized the Product Details page by eliminating unnecessary re-renders, leveraging Lighthouse and React
+Profiler — resulting in a 30% improvement in page load time and smoother user interactions.`,
+      `Revamped the Product Details page UI and layout, leading to a 20% increase in product views and a 10%
+boost in conversion rates.`,
+    ],
+  },
+  {
+    id: 2,
+    companyName: "Think & Learn Pvt. Ltd ( Byjus )",
+    logo: ByjusLogo,
+    designation: "Software Engineer",
+    type: "full_time",
+    startDate: "10-06-2022",
+    endDate: "20-09-2024",
+    current: false,
+    location: "Bangalore, Karnataka (WFH)",
+    skills: [
+      "React,Js",
+      "Javascript",
+      "SCSS",
+      "Redux",
+      "Redux-saga",
+      "Typescript",
+      "Next.js",
+      "Kotlin",
+      "Android Development",
+      "Git",
+      "Github",
+    ],
+    tenure: "2 Years and 3 months",
+    description: [
+      `Currently, I’m dedicated to crafting an order-punching platform using ReactJS for our sales division. This platform will
+enable efficient order placement on behalf of students.`,
+
+      `Implemented a second layer of authentication utilizing Google Single Sign-On (SSO), transitioning the
+micro-frontend platform into an independent platform.`,
+      `Lead the development of an in-house lead management system, OneLead to replace LeadSquared and streamline
+company’s operation by managing 6 crore leads, which will lead to cost savings of around Rs. 25 crore per year.`,
+      `Completed the end to end deliverable by performing unit testing using react-testing library and Jest.`,
+      `Managed a scholarship test platform with 1 million plus download.`,
+      `Developed and integrated a new authentication flow to onboard offline user on the android app increasing the user base
+by 30 percent.`,
+      `Developed an offline learning app that can be installed on tablets and TVs, aiding students in remote areas.`,
+    ],
+  },
+  {
+    id: 3,
     companyName: "Collegedunia",
     logo: CollegeduniaLogo,
     designation: "Frontend Developer (Intern)",
+    type: "internship",
     startDate: "15-03-2021",
     endDate: "31-07-2021",
     current: false,
@@ -48,48 +126,11 @@ export const workExpirienceData = [
     ],
   },
   {
-    id: 2,
-    companyName: "Think & Learn Pvt. Ltd ( Byjus )",
-    logo: ByjusLogo,
-    designation: "Software Engineer",
-    startDate: "10-06-2022",
-    endDate: "NA",
-    current: true,
-    location: "Bangalore, Karnataka (WFH)",
-    skills: [
-      "React,Js",
-      "Javascript",
-      "SCSS",
-      "Redux",
-      "Redux-saga",
-      "Typescript",
-      "Next.js",
-      "Kotlin",
-      "Android Development",
-      "Git",
-      "Github",
-    ],
-    tenure: "2 Years",
-    description: [
-      `Currently, I’m dedicated to crafting an order-punching platform using ReactJS for our sales division. This platform will
-enable efficient order placement on behalf of students.`,
-
-      `Implemented a second layer of authentication utilizing Google Single Sign-On (SSO), transitioning the
-micro-frontend platform into an independent platform.`,
-      `Lead the development of an in-house lead management system, OneLead to replace LeadSquared and streamline
-company’s operation by managing 6 crore leads, which will lead to cost savings of around Rs. 25 crore per year.`,
-      `Completed the end to end deliverable by performing unit testing using react-testing library and Jest.`,
-      `Managed a scholarship test platform with 1 million plus download.`,
-      `Developed and integrated a new authentication flow to onboard offline user on the android app increasing the user base
-by 30 percent.`,
-      `Developed an offline learning app that can be installed on tablets and TVs, aiding students in remote areas.`,
-    ],
-  },
-  {
     id: 3,
     companyName: "Anchanto",
     logo: AnchantoLogo,
     designation: "SDE (Intern)",
+    type: "internship",
     startDate: "02-01-2022",
     endDate: "30-04-2022",
     current: false,
@@ -248,17 +289,17 @@ export const skills = {
     {
       id: 2,
       name: "Next.Js",
-      score: 8,
+      score: 9,
     },
     {
       id: 3,
       name: "Redux",
-      score: 8,
+      score: 9,
     },
     {
       id: 4,
       name: "Redux-Saga",
-      score: 7,
+      score: 8,
     },
     {
       id: 5,
