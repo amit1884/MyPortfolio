@@ -53,7 +53,7 @@ function Navbar() {
               <FaGoogle />
             </a>
             <a
-              href="https://www.linkedin.com/in/amit-raj-ab5a8a181/"
+              href="https://www.linkedin.com/in/amit-raj-cs084/"
               className="social-icons"
               target="_blank"
               rel="noreferrer"
